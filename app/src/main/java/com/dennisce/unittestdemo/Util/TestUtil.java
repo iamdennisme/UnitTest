@@ -5,8 +5,11 @@ package com.dennisce.unittestdemo.Util;
  * so.....
  */
 
-public class MathUtil {
+public class TestUtil {
     public int add(int x,int y){
         return x+y;
+    }
+    public boolean equalsObject(String x,String y){
+        return x==y;
     }
 }

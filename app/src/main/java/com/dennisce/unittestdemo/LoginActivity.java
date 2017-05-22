@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         login();
     }
 
-    private void login() {
+    public void login() {
         User user = LoginUtil.newInstance().login(edtUserName.getText().toString().trim(), edtPassword.getText().toString().trim());
         if (user == null) {
             Toast.makeText(this, "用户名或者密码错误", Toast.LENGTH_SHORT).show();
